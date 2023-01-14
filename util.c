@@ -9,7 +9,7 @@ void init(ParityArray* par,int arr_size){
     size_t i;
     par->arr=(int*)malloc(arr_size*sizeof(int));
     for(i=0;i<arr_size;i++){
-        par->arr[i]=0; //I wanted to fill array with NULL, so that I can insert 0 as well , but had warning , that's why i initialised elements with 0
+        par->arr[i]=0; 
     }
     par->even_idx=0;
     par->odd_idx=arr_size-1;
